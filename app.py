@@ -1,18 +1,18 @@
 """
 Study Time Tracker
-------------------
+
 A simple Python program that asks for today's study hours,
 estimates your weekly study time, and shows your progress
 toward a weekly study goal.
 """
 
-# --- Task 1: Welcome message ---
+# Task 1: Welcome message
 print("Welcome to the Study Time Tracker!")
 
-# --- Task 2: Ask the user for input ---
+# Task 2: Ask the user for input 
 hours_input = input("How many hours did you study today? ")
 
-# --- Tasks 3 & 5: Convert input and handle errors ---
+# Tasks 3 & 5: Convert input and handle errors 
 try:
     # Try to convert the input to a floating-point number
     hours_today = float(hours_input)
@@ -27,7 +27,7 @@ except ValueError:
     print("Please enter a valid number for hours (for example: 2 or 2.5).")
     exit()
 
-# --- Task 3: Perform calculation ---
+# Task 3: Perform calculation 
 # Estimate weekly study hours by multiplying today's hours by 7
 estimated_weekly_hours = hours_today * 7
 
@@ -37,7 +37,7 @@ weekly_goal = 14
 # Calculate progress toward the goal as a percentage
 progress_percent = (estimated_weekly_hours / weekly_goal) * 100
 
-# --- Task 4: Display results clearly ---
+# Task 4: Display results clearly 
 print()  # blank line for readability
 print(f"If you keep this pace, you'll study about {estimated_weekly_hours:.1f} hours this week.")
 print(f"Your weekly study goal is {weekly_goal} hours.")
@@ -51,4 +51,4 @@ elif progress_percent < 100:
 else:
     print("Great job! You're on track to meet or exceed your goal this week.")
 
-# --- Task 6: Code is commented, cleaned, and ready ---
+# Task 6: Code is commented, cleaned, and ready
